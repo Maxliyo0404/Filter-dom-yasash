@@ -91,4 +91,7 @@ a{
     padding: 10px;
     border-radius: 20px;
     margin-bottom: 5px;
+    &:hover{
+        transform: scale(0.9);
+    }
 }
