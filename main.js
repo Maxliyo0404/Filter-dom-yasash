@@ -252,5 +252,9 @@ let searchInput = document.getElementById("searchInput");
        
  }
   searchInput.addEventListener("input", function(e)){
-    
+    let result = e.target.value.toLowerCase();
+    const filterkino = kinos.fiter(item =>
+        item.title.toLowerCase().includes(result)
+    );
+    kino(filterkino);
   }
