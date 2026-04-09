@@ -9,6 +9,8 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     background: #121212;
+    color: #ffffff;
+    padding: 20px;
 }
 .cards{
     min-height: 280px;
@@ -17,6 +19,7 @@
     border: 2px solid white;
     color: #e0e0e0;
     text-align: center;
-    padding: 5px;
+    padding: 15px;
+    overflow: hidden;
 
 }
