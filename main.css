@@ -46,8 +46,9 @@
     color: black;
     margin-bottom: 30px;
 }
-#img{
-    max-width: 80%;
-    padding: 20px;
+.rasm{
+    width: 80%;
+    max-height: 300px;
+    padding: 10px;
     border-radius: 20px;
 }
