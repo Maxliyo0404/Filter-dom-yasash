@@ -46,7 +46,7 @@
     border-radius: 30px;
     outline: none;
     color: black;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 .kinolar{
     max-width: 100%;
@@ -57,10 +57,26 @@
 }
 .item{
     width: 200px;
-    padding: 20px;
+    padding: 15px;
     border-radius:30px;
-    border: 2px solid black;
-    
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    &:hover{
+        transform: scale(1.1);
+    }
+
+}
+a{
+    text-decoration: none;
+    list-style: none;
+    font-size: 19px;
+    color: black;
+    &:hover{
+        color: #e50914;
+    }
 }
 .rasm{
     width: 80%;
