@@ -32,12 +32,12 @@ let allMovies = [...Uzbek, ...Hind, ...Koreys];
 function renderKino(kinos) {
     container.innerHTML = kinos.map(item => `
         <div class="cards">
-             <img src="https://picsum.photos/200/300?random=${item.id}" alt="rasm" ">
-             <h2>${item.title}</h2>
-             <h3>${item.genre}</h3>
-             <p>Yil: ${item.year}</p>
-             <p>Rejissyor: ${item.director}</p>
-             <p><b>Aktyorlar:</b> ${item.main_cast ? item.main_cast.join(", ") : "Noma'lum"}</p>
+             <img class="rasm" src="https://picsum.photos/200/300?random=${item.id}" alt="rasm" ">
+             <h2 class="title">${item.title}</h2>
+             <h3 class="genre">${item.genre}</h3>
+             <p class="year"> ${item.year}</p>
+             <p class="director">${item.director}</p>
+             <p class="a">${item.main_cast ? item.main_cast.join(", ") : "Noma'lum"}</p>
         </div>
     `).join("");
 }
