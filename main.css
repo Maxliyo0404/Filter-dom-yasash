@@ -55,6 +55,13 @@
     justify-content: center;
     gap: 15px;
 }
+.item{
+    width: 200px;
+    padding: 20px;
+    border-radius:30px;
+    border: 2px solid black;
+    
+}
 .rasm{
     width: 80%;
     max-height: 300px;
