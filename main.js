@@ -239,14 +239,18 @@ let searchInput = document.getElementById("searchInput");
   }
   ]
  function kino(kinos){
-    container.innerHTML = kinos.map((item => `
+    container.innerHTML = kinos.map(item => `
         <div class="cards">
-             <img src="" alt="rasm">
+             <img src="https://picsum.photos/200/300?random=1,...random=2 id/${ item.id}  " alt="rasm">
              <h2>${ item.title}</h2>
              <h3>${ item.genre}</h3>
              <p>${ item.year}</p>
              <p>${ item.director}</p>
              <a href="#">${item.main_cast}</a>
        </div>
-        `))
+        `).join("");
+       
  }
+  searchInput.addEventListener("input", function(e)){
+    
+  }
