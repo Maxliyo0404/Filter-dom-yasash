@@ -8,10 +8,13 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    background: slateblue;
+    background: #121212;
 }
 .cards{
     width: 100%;
+    min-height: 280px;
     border-radius: 20px;
+    border: 2px solid white;
+    color: #ffffff;
 
 }
