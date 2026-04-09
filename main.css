@@ -8,6 +8,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+    border-radius: 30px;
     background: #121212;
     color: #ffffff;
     padding: 20px;
@@ -52,4 +53,5 @@
     max-height: 300px;
     padding: 10px;
     border-radius: 20px;
+    margin-bottom: 5px;
 }
