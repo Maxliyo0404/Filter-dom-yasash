@@ -1,5 +1,6 @@
 let container = document.getElementById("container");
 let searchInput = document.getElementById("searchInput");
+
  let Uzbek = [
     {
     "id": 1,
@@ -72,3 +73,8 @@ let searchInput = document.getElementById("searchInput");
     "rejissyor": "Sanjar Matkarimov"
   }
  ]
+ function kino(kinos){
+    container.innerHTML = kinos.map((item => `
+        
+        `))
+ }
