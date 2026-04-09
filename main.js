@@ -27,24 +27,55 @@ let Koreys = [
     { id: 22, title: "Train to Busan", genre: "Action/Horror", year: 2016, director: "Yeon Sang-ho", main_cast: ["Gong Yoo"] },
     { id: 23, title: "Oldboy", genre: "Action/Neo-noir", year: 2003, director: "Park Chan-wook", main_cast: ["Choi Min-sik"] }
 ];
- function kino(kinos){
+let allMovies = [...Uzbek, ...Hind, ...Koreys];
+
+function renderKino(kinos) {
     container.innerHTML = kinos.map(item => `
-        <div class="cards">
-             <img src="https://picsum.photos/200/300?random=1,...random=2 id/${ item.id}  " alt="rasm">
-             <h2>${ item.title}</h2>
-             <h3>${ item.genre}</h3>
-             <p>${ item.year}</p>
-             <p>${ item.director}</p>
-             <a href="#">${item.main_cast}</a>
-       </div>
-        `).join("");
-       
- }
-  searchInput.addEventListener("input", function(e)){
+        <div class="cards" style="border: 1px solid #ddd; padding: 15px; margin: 10px; border-radius: 8px; width: 250px; display: inline-block; vertical-align: top;">
+             <img src="https://picsum.photos/200/300?random=${item.id}" alt="rasm" style="width: 100%; border-radius: 4px;">
+             <h2 style="font-size: 18px;">${item.title}</h2>
+             <h3 style="font-size: 14px; color: gray;">${item.genre}</h3>
+             <p>Yil: ${item.year}</p>
+             <p>Rejissyor: ${item.director}</p>
+             <p><b>Aktyorlar:</b> ${item.main_cast ? item.main_cast.join(", ") : "Noma'lum"}</p>
+        </div>
+    `).join("");
+}
+searchInput.addEventListener("input", function(e) {
     let result = e.target.value.toLowerCase();
-    const filterkino = kinos.filter(item =>
-        item.title.toLowerCase().includes(result)
+    const filteredKino = allMovies.filter(item =>
+        item.title.toLowerCase().includes(result) || 
+        item.genre.toLowerCase().includes(result)
     );
-    kino(filterkino);
-  }
-   kino(item);
+    renderKino(filteredKino);
+});
+renderKino(allMovies);
+
+
+
+
+
+
+
+
+//  function kino(kinos){
+//     container.innerHTML = kinos.map(item => `
+//         <div class="cards">
+//              <img src="https://picsum.photos/200/300?random=1,...random=2 id/${ item.id}  " alt="rasm">
+//              <h2>${ item.title}</h2>
+//              <h3>${ item.genre}</h3>
+//              <p>${ item.year}</p>
+//              <p>${ item.director}</p>
+//              <a href="#">${item.main_cast}</a>
+//        </div>
+//         `).join("");
+       
+//  }
+//   searchInput.addEventListener("input", function(e)){
+//     let result = e.target.value.toLowerCase();
+//     const filterkino = kinos.filter(item =>
+//         item.title.toLowerCase().includes(result)
+//     );
+//     kino(filterkino);
+//   }
+//    kino(item);

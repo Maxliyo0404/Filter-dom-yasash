@@ -7,12 +7,17 @@
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <div id="container" class="container">
-        <form class="form">
+    <div class="wrapper">
+        <form class="form" onsubmit="event.preventDefault()">
             <label class="label">
-                <input id="searchInput" class="input" type="text" required placeholder="Search for movies....">
+                <input id="searchInput" class="input" type="text" required placeholder="Kino nomini yozing...">
             </label>
         </form>
+
+        <div id="container" class="movie-grid">
+            </div>
+
+        <hr>
         <ul id="kinolar" class="kinolar">
             <li><a href="#">Uzbek kinolar</a></li>
             <li><a href="./Hind.html">Hind kinolar</a></li>
