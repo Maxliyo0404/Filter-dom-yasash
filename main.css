@@ -22,6 +22,7 @@
     padding: 15px;
     overflow: hidden;
     transition: all 03.s ease-in-out;
+    box-shadow: 0px 10px 25px ghostwhite;
     &:hover{
         transform: scale(1.03);
         border: 2px solid #e50914 ;
