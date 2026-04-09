@@ -240,6 +240,13 @@ let searchInput = document.getElementById("searchInput");
   ]
  function kino(kinos){
     container.innerHTML = kinos.map((item => `
-        
+        <div class="cards">
+             <img src="" alt="rasm">
+             <h2>${ item.title}</h2>
+             <h3>${ item.genre}</h3>
+             <p>${ item.year}</p>
+             <p>${ item.director}</p>
+             <a href="#">${item.main_cast}</a>
+       </div>
         `))
  }
